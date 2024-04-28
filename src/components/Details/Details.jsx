@@ -31,12 +31,12 @@ const Details = ({detail}) => {
     <div>
       <h1 className="text-3xl bg-cover font-bold w-24">{country_Name}</h1>
       <p className="py-6 ">{tourists_spot_name}</p>
-      <h3>Segment Name: {ShortDescription}</h3>
-      <h3>Area:{Seasonality} sq ft </h3>
+      <h3>Description: {ShortDescription}</h3>
+      <h3>Season:{Seasonality} sq ft </h3>
     
-     <h1>Fascilities: <br /> {travelTime}</h1>
-     <h3>Status:{tota}</h3>
-     <h2>Price:{Average_cost}</h2>
+     <h1>Travel time: <br /> {travelTime}</h1>
+     <h3>{tota}</h3>
+     <h2>Cost:{Average_cost}</h2>
     </div>
   </div>
 </div>

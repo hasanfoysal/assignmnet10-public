@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
-const TravelCard = ({travel}) => {
+const TravelCard = ({travel,travels, setTravels}) => {
 
     const { _id, name,email,ShortDescription,country_Name,tourists_spot_name,photo} = travel;
 
@@ -30,6 +30,8 @@ const TravelCard = ({travel}) => {
                             text: "Your file has been deleted.",
                             icon: "success"
                           });
+                          const remaining = travels.filter(tra => tra._id !== _id);
+                          setTravels(remaining);
 
                 }
             })

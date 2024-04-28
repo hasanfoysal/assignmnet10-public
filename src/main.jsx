@@ -52,6 +52,7 @@ const router = createBrowserRouter([
         path: "list",
         element: <PrivateRoute><MyList></MyList></PrivateRoute>,
         loader: () => fetch('http://localhost:5000/travel')
+        // 
       },
       {
         path: "/update/:id",
