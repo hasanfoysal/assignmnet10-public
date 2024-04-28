@@ -6,7 +6,7 @@ const Update = () => {
     const travel = useLoaderData();
         const { _id, name,email,ShortDescription,country_Name,tourists_spot_name,photo,Seasonality,Average_cost,travelTime,tota} = travel;
 
-        const x = event => {
+        const updateSpot = event => {
             event.preventDefault();
     
             const form = event.target;
@@ -57,7 +57,7 @@ const Update = () => {
       <h2 className="text-3xl text-teal-700 text-center font-bold my-5">
         Tour Details Update
       </h2>
-      <form onSubmit={x}>
+      <form onSubmit={updateSpot}>
         
         <div className="lg:flex lg:flex-row flex-col gap-5">
           <div className="form-control md:w-1/2">
