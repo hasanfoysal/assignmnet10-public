@@ -1,11 +1,12 @@
 import travel4 from "../../assets/travel4.avif"
+import Helmet from "helmet"
 const AboutUs = () => {
     return (
       <div>
         <div data-aos="fade-up" data-aos-duration='1000'>
-            
-               
+            <Helmet>
                 <title>About Us</title>
+                </Helmet>
                 
             
             <div className="hero min-h-screen bg-base-200 lg:my-10">

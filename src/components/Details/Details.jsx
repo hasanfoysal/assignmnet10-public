@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-
+import Helmet from "helmet"
 // eslint-disable-next-line react/prop-types
 const Details = ({detail}) => {
 
@@ -25,14 +25,16 @@ const Details = ({detail}) => {
 
 
     return (
+      
         <div className="hero min-h-screen bg-base-200">
+          <Helmet><title>details</title></Helmet>
   <div className="hero-content flex-col lg:flex-row">
     <img src={photo} className="d max-w-sm rounded-lg shadow-2xl h-[350px] w-[270px] lg:h-[400px] lg:w-[400px]" />
     <div>
       <h1 className="text-3xl bg-cover font-bold w-24">{country_Name}</h1>
       <p className="py-6 ">{tourists_spot_name}</p>
       <h3>Description: {ShortDescription}</h3>
-      <h3>Season:{Seasonality} sq ft </h3>
+      <h3>Season:{Seasonality}  </h3>
     
      <h1>Travel time: <br /> {travelTime}</h1>
      <h3>{tota}</h3>

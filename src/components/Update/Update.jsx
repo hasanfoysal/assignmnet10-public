@@ -1,5 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
+import Helmet from "helmet"
 
 const Update = () => {
 
@@ -54,6 +55,7 @@ const Update = () => {
 
     return (
         <div className="bg-red-100 lg:p-16 mb-4">
+          <Helmet><title>update</title></Helmet>
       <h2 className="text-3xl text-teal-700 text-center font-bold my-5">
         Tour Details Update
       </h2>

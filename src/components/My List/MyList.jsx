@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import TravelCard from "../Travel card/TravelCard";
 import { useState } from "react";
+import Helmet from "helmet"
 
 const MyList = () => {
 
@@ -9,6 +10,7 @@ const MyList = () => {
 
     return (
         <div className=" m-5 lg:m-20 ">
+          <Helmet><title>list</title></Helmet>
             <h3 className="text-5xl text-center my-2 mt-6 text-purple-600">My List</h3>
           <div className="grid md:grid-col-2 gap-4">
           {

@@ -3,9 +3,11 @@ import { Fade } from "react-awesome-reveal";
 import img1 from "../../assets/images (1).jpeg"
 import img2 from "../../assets/images (2).jpeg"
 import img3 from "../../assets/images (3).jpeg"
+import Helmet from "helmet"
 const Testimonials = () => {
     return (
       <section className="testimonials">
+        <Helmet><title>reviews</title></Helmet>
 
         <Fade direction="right">
         <h2 className="text-3xl my-3 mb-3">What <span className="text-orange-500 text-4xl"> Our Travelers </span>Say</h2>

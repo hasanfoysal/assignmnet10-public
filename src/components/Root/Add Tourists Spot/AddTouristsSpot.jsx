@@ -1,4 +1,5 @@
 import Swal from 'sweetalert2'
+import Helmet from "helmet"
 const AddTouristsSpot = () => {
 
     const AddSpot = event => {
@@ -46,6 +47,9 @@ const AddTouristsSpot = () => {
     }
     return (
         <div className="bg-red-100 lg:p-16 mb-4">
+          <Helmet>
+            <title>addSpot</title>
+          </Helmet>
       <h2 className="text-3xl text-teal-700 text-center font-bold my-5">
         Add Tourists Spot
       </h2>

@@ -1,6 +1,7 @@
 
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
+import Helmet from "helmet"
 import google from "../../../assets/download (5).png"
 import github from "../../../assets/download (4).png"
 import AOS from 'aos';
@@ -46,6 +47,7 @@ const Login = () => {
       console.log(loggedUser);
       setUser(loggedUser);
       setSuccess('user logged successfully.')
+      alert ('user logged successfully.')
      
     })
     .catch(error =>{
@@ -71,6 +73,7 @@ const Login = () => {
         .then(result =>{
           console.log(result.user);
           setSuccess('user logged successfully.')
+          alert('user logged successfully.')
 
       
         })
@@ -83,8 +86,9 @@ const Login = () => {
     }
     return (
         <div >
-     
+     <Helmet>
                 <title>Login</title>
+                </Helmet>
                
         
         <div className="hero min-h-screen bg-base-200" >

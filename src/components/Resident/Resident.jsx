@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-
+import Helmet from "helmet"
 import { Link } from "react-router-dom";
 import {Fade} from "react-awesome-reveal"
 
@@ -12,6 +12,7 @@ const Resident = ({Resi}) => {
     return (
  
         <div className="card card-compact w-72 md:w-80 lg:w-[500px] mx-auto  bg-base-100 shadow-xl max-w-xs transition duration-300 ease-in-out hover:scale-110" >
+          <Helmet>resident</Helmet>
         <Fade direction="left">
         <figure><img className=" w-[300px] lg:w-[370px]" src={photo} alt="" /></figure>
         <div className="card-body">

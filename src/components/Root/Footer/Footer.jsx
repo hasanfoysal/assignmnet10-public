@@ -1,8 +1,9 @@
 
-
+import Helmet from "helmet"
 const Footer = () => {
     return (
         <div >
+          <Helmet><title>footer</title></Helmet>
             <footer className="footer p-10 bg-black text-white ">
   <nav className="lg:ml-16">
     <h6 className="footer-title">Services</h6> 

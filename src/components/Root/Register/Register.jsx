@@ -1,7 +1,7 @@
 
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-
+import Helmet from "helmet"
 // eslint-disable-next-line no-unused-vars
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 // eslint-disable-next-line no-unused-vars
@@ -53,6 +53,7 @@ const Register = () => {
     }
     return (
         <div >
+          <Helmet><title>register</title></Helmet>
         <div className="hero min-h-screen bg-base-200" >
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-left"data-aos="flip-right" data-aos-duration="2000">

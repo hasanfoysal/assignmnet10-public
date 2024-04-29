@@ -3,6 +3,7 @@ import travel2 from '../../../assets/travel2.avif'
 import travel4 from '../../../assets/travel4.avif'
 import travel3 from '../../../assets/travel3.avif'
 import {useTypewriter, Cursor} from 'react-simple-typewriter';
+import Helmet from "helmet"
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
@@ -17,6 +18,8 @@ const Banner = () => {
   });
     return ( 
         <div >
+          <Helmet><title>banner</title></Helmet>
+
             <div className="border-t bg-black text-white border-base-300"></div>
             <div className="border-t bg-black text-white border-base-300"></div>
           
