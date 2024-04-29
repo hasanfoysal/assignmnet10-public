@@ -61,7 +61,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'viewdetails',
-        element: <Viewdetails></Viewdetails>,
+        element:<PrivateRoute><Viewdetails></Viewdetails></PrivateRoute> ,
         loader: () => fetch('http://localhost:5000/travel')
       }
    

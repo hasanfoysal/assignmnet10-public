@@ -2,6 +2,7 @@ import travel from '../../../assets/travel.png'
 import travel2 from '../../../assets/travel2.avif'
 import travel4 from '../../../assets/travel4.avif'
 import travel3 from '../../../assets/travel3.avif'
+import {useTypewriter, Cursor} from 'react-simple-typewriter';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
@@ -9,6 +10,11 @@ AOS.init();
 
 import CountUp from "react-countup";
 const Banner = () => {
+
+  const [text] = useTypewriter({
+    words: ['Travel', 'Explore', 'Relax'],
+    loop: {},
+  });
     return (
         <div >
             <div className="border-t bg-black text-white border-base-300"></div>
@@ -22,8 +28,7 @@ const Banner = () => {
      data-aos-easing="linear"
      data-aos-duration="1500"/>
     <div className="mr-4 ">
-      <h1 className="lg:text-5xl text-2xl font-bold m-6 text-yellow-50"  data-aos="fade-right"
-     data-aos-duration="2000"><h1 className='lg:text-4xl text-2xl'>TIME TO</h1><h2 className='text-3xl lg:text-5xl'>TRAVEL!</h2></h1>
+      <h1 className="lg:text-5xl text-2xl font-bold m-6 text-yellow-50"  ><h1 className='lg:text-4xl text-2xl'>TIME TO</h1><h2 className='text-3xl lg:text-5xl text-teal-500'>{text}</h2><Cursor></Cursor></h1>
       <p className="py-4 pb-8 text-zinc-300 mx-4" data-aos="fade-up-right"
      data-aos-duration="2500">Find a variety of places that suit you very easilty 
 Forget <br /> all difficulties in finding a residence for you</p>
@@ -108,7 +113,7 @@ Forget <br /> all difficulties in finding a residence for you</p>
      data-aos-duration="1500"/>
     <div className="mr-4 " data-aos="fade-up-right"
      data-aos-duration="2000">
-      <h1 className="lg:text-5xl text-2xl font-bold m-6 text-yellow-50"><h1 className='lg:text-4xl text-2xl'>TIME TO</h1><h2 className='text-3xl lg:text-5xl'>TRAVEL!</h2></h1>
+      <h1 className="lg:text-5xl text-2xl font-bold m-6 text-yellow-50"><h1 className='lg:text-4xl text-2xl'>TIME TO</h1><h2 className='text-3xl lg:text-5xl text-teal-500'>{text}</h2></h1>
       <p className="py-4 pb-8 text-zinc-300 mx-4">Find a variety of places that suit you very easilty 
 Forget <br /> all difficulties in finding a residence for you</p>
 <div className="lg:flexCenter stats flex-row w-[290px] lg:w-full ">
