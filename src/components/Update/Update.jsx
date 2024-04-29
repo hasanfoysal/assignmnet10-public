@@ -26,7 +26,7 @@ const Update = () => {
             const x = {name,email,tota,travelTime,Seasonality,Average_cost,ShortDescription,location,country_Name,tourists_spot_name,photo}
             console.log(x);
     
-            fetch(`http://localhost:5000/travel/${_id}`, {
+            fetch(`https://travel-server-xi-ten.vercel.app/travel/${_id}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'

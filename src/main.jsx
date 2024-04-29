@@ -51,18 +51,18 @@ const router = createBrowserRouter([
       {
         path: "list",
         element: <PrivateRoute><MyList></MyList></PrivateRoute>,
-        loader: () => fetch('http://localhost:5000/travel')
+        loader: () => fetch('https://travel-server-xi-ten.vercel.app/travel')
         // 
       },
       {
         path: "/update/:id",
         element: <PrivateRoute><Update></Update></PrivateRoute>,
-        loader: ({params}) => fetch(`http://localhost:5000/travel/${params.id}`)
+        loader: ({params}) => fetch(`https://travel-server-xi-ten.vercel.app/travel/${params.id}`)
       },
       {
         path: 'viewdetails',
         element:<PrivateRoute><Viewdetails></Viewdetails></PrivateRoute> ,
-        loader: () => fetch('http://localhost:5000/travel')
+        loader: () => fetch('https://travel-server-xi-ten.vercel.app/travel')
       }
    
     ]

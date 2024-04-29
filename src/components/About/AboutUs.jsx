@@ -1,6 +1,7 @@
 import travel4 from "../../assets/travel4.avif"
 const AboutUs = () => {
     return (
+      <div>
         <div data-aos="fade-up" data-aos-duration='1000'>
             
                
@@ -53,6 +54,7 @@ We beleive a good blace to live can make your life better</p>
 </div>
   </div>
 </div>
+        </div>
         </div>
     );
 };
